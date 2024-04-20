@@ -9,6 +9,7 @@ ecpdist is a package that will compute the values of the distribution, survival,
 You can install the released version of the development version from GitHub with::
 
 install.packages("devtools")
+
 devtools::install_github("abreu-uma/ecpdist")
 
 # References
