@@ -1,0 +1,18 @@
+Package: ecpdist
+Type: Package
+Title: Extended Chen-Poisson Lifetime Distribution
+Version: 0.0.0.9000
+Author: Ana Abreu [aut, cre], (https://orcid.org/0000-0002-6155-8492)
+        Ivo Sousa-Ferreira [aut] (https://orcid.org/0000-0001-5526-3594)
+        Cristina Rocha [ctb]  (https://orcid.org/0000-0001-7162-4820)
+Maintainer: The package maintainer <abreu@staff.uma.pt>
+Description: Computes the Extended Chen-Poisson (ecp) distribution, survival, 
+    density, hazard and cumulative hazard functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+References: Sousa-Ferreira, I., Abreu, A.M. & Rocha, C. (2023). 
+    The Extended Chen-Poisson Lifetime Distribution. 
+    REVSTAT – Statistical Journal, 21(2), 173-196. 
+    https://doi.org/10.57805/revstat.v21i2.405
+RoxygenNote: 7.3.1
