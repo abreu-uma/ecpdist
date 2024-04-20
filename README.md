@@ -18,3 +18,4 @@ Sousa-Ferreira, I., Abreu, A.M. & Rocha, C. (2023). The Extended Chen-Poisson Li
 # Contact information
 
 abreu@staff.uma.pt
+
