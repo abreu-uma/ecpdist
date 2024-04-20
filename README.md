@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 # ecpdist
 Extended Chen-Poisson Lifetime Distribution
 
@@ -19,4 +18,3 @@ Sousa-Ferreira, I., Abreu, A.M. & Rocha, C. (2023). The Extended Chen-Poisson Li
 # Contact information
 
 abreu@staff.uma.pt
->>>>>>> c0e40bc31987046312ce5cf63368eb6de17e4538
