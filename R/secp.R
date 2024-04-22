@@ -3,7 +3,8 @@
 #' Survival function
 #'
 #' @description
-#' Compute the extended Chen-Poisson (ecp) survival function.
+#' Compute the survival function of the extended Chen-Poisson (ecp)
+#' distribution.
 #'
 #' @param q vector of quantiles.
 #'

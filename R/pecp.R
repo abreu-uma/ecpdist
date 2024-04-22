@@ -3,7 +3,8 @@
 #' Distribution function
 #'
 #' @description
-#' Compute the extended Chen-Poisson (ecp) distribution function.
+#' Compute the cumulative distribution function of the extended
+#' Chen-Poisson (ecp) distibution.
 #'
 #' @param q vector of quantiles.
 #'
