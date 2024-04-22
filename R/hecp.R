@@ -3,7 +3,7 @@
 #' Hazard function
 #'
 #' @description
-#' Compute the extended Chen-Poisson (ecp) hazard function.
+#' Compute the hazard function of the extended Chen-Poisson (ecp) distribution.
 #'
 #' @param x vector of quantiles.
 #'
