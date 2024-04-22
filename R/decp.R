@@ -3,7 +3,7 @@
 #' Density function
 #'
 #' @description
-#' Compute the extended Chen-Poisson (ecp) density function.
+#' Compute the density function of the extended Chen-Poisson (ecp) distribution.
 #'
 #' @param x vector of quantiles.
 #'
