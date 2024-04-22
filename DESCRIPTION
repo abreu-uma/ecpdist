@@ -2,9 +2,7 @@ Package: ecpdist
 Type: Package
 Title: Extended Chen-Poisson Lifetime Distribution
 Version: 0.0.0.9000
-Author: Ana Abreu [aut, cre], (https://orcid.org/0000-0002-6155-8492)
-        Ivo Sousa-Ferreira [aut] (https://orcid.org/0000-0001-5526-3594)
-        Cristina Rocha [ctb]  (https://orcid.org/0000-0001-7162-4820)
+Author: Ana Abreu [aut, cre], Ivo Sousa-Ferreira [aut], Cristina Rocha [ctb]
 Maintainer: The package maintainer <abreu@staff.uma.pt>
 Description: Computes the Extended Chen-Poisson (ecp) distribution, survival, 
     density, hazard and cumulative hazard functions.
