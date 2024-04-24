@@ -3,7 +3,8 @@
 #' Quantile function
 #'
 #' @description
-#' Compute the extended Chen-Poisson (ecp) quantile function.
+#' Compute the quantile function of the extended Chen-Poisson (ecp)
+#' distribution.
 #'
 #' @param p vector of probabilities.
 #'
