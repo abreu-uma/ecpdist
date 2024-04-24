@@ -33,7 +33,8 @@ If lower_tail = FALSE, numeric value of the survival function.
 If log_p = TRUE, numeric value of the logarithm of the function.
 }
 \description{
-Compute the extended Chen-Poisson (ecp) distribution function.
+Compute the cumulative distribution function of the extended
+Chen-Poisson (ecp) distibution.
 
 Compute the cumulative distribution function of the extended
 Chen-Poisson (ecp) distibution.

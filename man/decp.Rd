@@ -29,7 +29,7 @@ If log = TRUE, numeric value of the logarithm of the function.
 \description{
 Compute the density function of the extended Chen-Poisson (ecp) distribution.
 
-Compute the extended Chen-Poisson (ecp) density function.
+Compute the density function of the extended Chen-Poisson (ecp) distribution.
 }
 \examples{
 decp(2, 1, 1, 1, log = FALSE) # density function

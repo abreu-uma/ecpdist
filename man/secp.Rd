@@ -33,7 +33,8 @@ If lower_tail = TRUE, numeric value of the distribution function.
 If cum_haz = TRUE, numeric value of the cumulative hazard function.
 }
 \description{
-Compute the extended Chen-Poisson (ecp) survival function.
+Compute the survival function of the extended Chen-Poisson (ecp)
+distribution.
 
 Compute the survival function of the extended Chen-Poisson (ecp)
 distribution.

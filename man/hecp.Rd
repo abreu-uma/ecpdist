@@ -27,7 +27,7 @@ Numeric value of the hazard function.
 If log = TRUE, numeric value of the logarithm of the function.
 }
 \description{
-Compute the extended Chen-Poisson (ecp) hazard function.
+Compute the hazard function of the extended Chen-Poisson (ecp) distribution.
 
 Compute the hazard function of the extended Chen-Poisson (ecp) distribution.
 }
