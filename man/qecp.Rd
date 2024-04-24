@@ -26,7 +26,8 @@ the logarithm of the function.
 If log_p = TRUE, numeric value of the logarithm of the function.
 }
 \description{
-Compute the extended Chen-Poisson (ecp) quantile function.
+Compute the quantile function of the extended Chen-Poisson (ecp)
+distribution.
 }
 \examples{
 qecp(0.5, 2, 1, 1, lower_tail = TRUE, log_p = FALSE)
