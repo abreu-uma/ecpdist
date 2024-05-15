@@ -6,7 +6,8 @@ Author: Ana Abreu [aut, cre], Ivo Sousa-Ferreira [aut]
         Cristina Rocha [ctb]
 Maintainer: The package maintainer <abreu@staff.uma.pt>
 Description: Computes the Extended Chen-Poisson (ecp) distribution, survival, 
-    density, hazard and cumulative hazard functions.
+    density, hazard and cumulative hazard functions. It also allows to generate
+    a pseudo-random sample from the ecp distribution.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
