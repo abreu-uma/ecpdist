@@ -41,7 +41,7 @@ qecp <- function(p, lambda, gamma, phi, lower_tail = TRUE, log_p = FALSE) {
     stop("Invalid arguments")
   }
 
-  # Calculate qf
+  # Compute qf
   qf <- (log(1 - lambda^(-1) * log(1 - phi^(-1) *
                                      log(1 + (exp(phi) - 1) * p))))^
     (1 / gamma)

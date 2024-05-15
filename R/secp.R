@@ -31,7 +31,8 @@
 #' @export
 secp <- function(q, lambda, gamma, phi, lower_tail = FALSE,
                  cum_haz = FALSE) {
-  # Check if arguments are numeric
+
+   # Check if arguments are numeric
   if (!all(sapply(list(q, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
@@ -42,7 +43,7 @@ secp <- function(q, lambda, gamma, phi, lower_tail = FALSE,
     stop("Invalid arguments")
   }
 
-  # Calculate survival function
+  # Compute survival function
   sf <- (1 - exp(-phi * exp(lambda * (1 - exp(q^gamma))))) /
     (1 - exp(-phi))
 
@@ -50,7 +51,7 @@ secp <- function(q, lambda, gamma, phi, lower_tail = FALSE,
   if (lower_tail)
     sf <- 1 - sf
 
-  # Calculate cumulative hazard function if cum_haz is TRUE
+  # Compute cumulative hazard function if cum_haz is TRUE
 
   if (cum_haz)
     sf <- -log(sf)

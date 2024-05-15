@@ -26,7 +26,7 @@ If log_p = TRUE, numeric value of the logarithm of the function.
 }
 \description{
 Compute the cumulative distribution function of the extended
-Chen-Poisson (ecp) distibution.
+Chen-Poisson (ecp) distribution.
 }
 \examples{
 pecp(2, 1, 1, 1, lower_tail = TRUE, log_p = FALSE) # distribution function

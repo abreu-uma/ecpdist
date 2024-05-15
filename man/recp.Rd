@@ -22,6 +22,6 @@ Generate a pseudo-random sample, without censoring, from the
 extended Chen-Poisson (ecp) distribution.
 }
 \examples{
-recp(10,1,1,1) #  random sample of size 10
+recp(10,1,1,1) # random sample of size 10
 
 }

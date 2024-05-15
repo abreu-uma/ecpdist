@@ -22,6 +22,7 @@
 #'
 #' @export
 decp <- function(x, lambda, gamma, phi, log = FALSE) {
+
   # Check if arguments are numeric
   if (!all(sapply(list(x, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
@@ -33,7 +34,7 @@ decp <- function(x, lambda, gamma, phi, log = FALSE) {
     stop("Invalid arguments")
   }
 
-  # Calculate density function
+  # Compute density function
 
   pdf <- (lambda * gamma * phi * x^(gamma - 1) *
             exp(-phi * exp(lambda * (1 - exp(x^gamma))) +

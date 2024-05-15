@@ -4,7 +4,7 @@
 #'
 #' @description
 #' Compute the cumulative distribution function of the extended
-#' Chen-Poisson (ecp) distibution.
+#' Chen-Poisson (ecp) distribution.
 #'
 #' @param q vector of quantiles.
 #'
@@ -29,6 +29,7 @@
 #' @export
 pecp <- function(q, lambda, gamma, phi, lower_tail = TRUE,
                  log_p = FALSE) {
+
   # Check if arguments are numeric
   if (!all(sapply(list(q, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
@@ -40,7 +41,7 @@ pecp <- function(q, lambda, gamma, phi, lower_tail = TRUE,
     stop("Invalid arguments")
   }
 
-  # Calculate CDF #
+  # Compute CDF
   cdf <- 1 -  (1 - exp(-phi * exp(lambda * (1 - exp(q^gamma))))) /
     (1 - exp(-phi))
 

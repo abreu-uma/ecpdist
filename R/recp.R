@@ -16,10 +16,11 @@
 #' extended Chen-Poisson distribution.
 #'
 #' @examples
-#' recp(10,1,1,1) #  random sample of size 10
+#' recp(10,1,1,1) # random sample of size 10
 #'
 #' @export
 recp <- function(n, lambda, gamma, phi) {
+
   # Check if arguments are numeric
   if (!all(sapply(list(n, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
