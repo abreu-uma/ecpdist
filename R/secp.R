@@ -32,7 +32,7 @@
 secp <- function(q, lambda, gamma, phi, lower_tail = FALSE,
                  cum_haz = FALSE) {
 
-   # Check if arguments are numeric
+  # Check if arguments are numeric
   if (!all(sapply(list(q, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
