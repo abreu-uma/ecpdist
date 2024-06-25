@@ -2,7 +2,7 @@
 # ecpdist
 Extended Chen-Poisson Lifetime Distribution
 
-ecpdist is a package that computes the values of the cumulative distribution, survival, density, hazard and cumulative hazard functions of the Extended Chen-Poisson Lifetime Distribution. For now, it also computes the quantile function but some more functions and graphics will appear soon!
+ecpdist is a package that computes the values of the cumulative distribution, survival, density, hazard, cumulative hazard and quantile functions of the Extended Chen-Poisson Lifetime Distribution. The corresponding graphics are now available. Some more functions will appear soon!
 
 # Installation
 
