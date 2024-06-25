@@ -22,7 +22,8 @@ ecp_plot(
 )
 }
 \arguments{
-\item{data_type}{either a x vector of data values or an expression.}
+\item{data_type}{specifies whether the input is a x vector of data values or
+an expression.}
 
 \item{from}{lower x axis limit.}
 
@@ -40,7 +41,7 @@ ecp_plot(
 
 \item{log}{logical value.}
 
-\item{func_type}{type of function to be plotted.}
+\item{func_type}{specifies the type of function to be plotted.}
 
 \item{title}{title of the graphic.}
 
@@ -54,11 +55,13 @@ If log = TRUE, numeric value of the logarithm of the function.
 graphic of the chosen ecp function.
 }
 \description{
-Plots the density, distribution, hazard and survival functions of the
-extended Chen-Poisson (ecp) distribution.
+Plots the density, cumulative distribution, hazard, survival and quantile
+functions of the extended Chen-Poisson (ecp) distribution.
 }
 \examples{
-ecp_plot(data_type = "expression", func_type = "hazard",
-title = "Hazard Function (Expression)") # hazard function graphic
 
+ecp_plot(data_type = "expression", from = 0, to = 1,
+func_type = "cumulative distribution",
+title = "Cumulative Distribution Function (Expression)")
+#  Example of plotting cumulative distribution using an expression
 }
