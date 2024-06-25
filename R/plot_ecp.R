@@ -3,7 +3,7 @@
 #' Plot function
 #'
 #' @description
-#' Plots the density, distribution, hazard and survival functions of the
+#' Plots the density, cumulative distribution, hazard and survival functions of the
 #' extended Chen-Poisson (ecp) distribution.
 #'
 #' @param data_type either a x vector of data values or an expression.
