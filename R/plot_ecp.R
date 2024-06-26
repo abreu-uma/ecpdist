@@ -51,14 +51,22 @@
 #'
 #' @examples
 #'
+#'#  Example of plotting cumulative distribution using an expression
+#'
 #' ecp_plot(data_type = "expression", lambda = 6, gamma = 0.3, phi = 30,
 #' func_type = "cumulative distribution",
 #' title = "Cumulative Distribution Function (Expression)")
-#' #  Example of plotting cumulative distribution using an expression
+#'
+#'#  Example of plotting an unimodal hazard function using an expression
 #'
 #' ecp_plot(data_type = "expression", lambda = 6, gamma = 0.3, phi = 30,
 #' func_type = "hazard", title = "Hazard Function (Expression)")
-#' #  Example of plotting an unimodal hazard function using an expression
+#'
+#'#  Example of plotting an unimodal hazard function using data points
+#'
+#' x_data <- seq(0.0000001, 1, by=0.0001)
+#' ecp_plot(data_type = "data", x = x_data, lambda = 6, gamma = 0.3, phi = 30,
+#' func_type = "hazard", title = "Hazard Function (Data Points)")
 #'
 #' @export
 #'
