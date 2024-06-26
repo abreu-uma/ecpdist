@@ -111,6 +111,16 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
                       'cumulative hazard', 'survival', 'cumulative distribution'
                       or 'quantile'."))
 
+  # Define y-axis label based on func_type
+
+  ylab <- switch(func_type,
+                 "density" = "Density",
+                 "hazard" = "Hazard",
+                 "cumulative hazard" = "Cumulative Hazard",
+                 "survival" = "Survival",
+                 "cumulative distribution" = "Cumulative Distribution",
+                 "quantile" = "Quantile")
+
   if (data_type == "expression") {
 
     # Plot based on expression
@@ -147,7 +157,7 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
                             'cumulative hazard', 'survival',
                             'cumulative distribution' or 'quantile'."))
     plot(x, y_values, type = "l", xlim = xlim, ylim = ylim, col = col,
-         lty = lty, main = title, xlab = "x", ylab = func_type)
+         lty = lty, main = title, xlab = "x", ylab = ylab)
 
   } else {
     stop("Invalid data type. Use 'expression' or 'data'.")
