@@ -29,6 +29,7 @@ Compute the survival function of the extended Chen-Poisson (ecp)
 distribution.
 }
 \examples{
+
 secp(2, 1, 1, 1, lower_tail = FALSE, cum_haz = FALSE) # survival function
 secp(2, 1, 1, 1, lower_tail = TRUE, cum_haz = FALSE) # distribution function
 secp(2, 1, 1, 1, lower_tail = FALSE, cum_haz = TRUE) # cumulative
