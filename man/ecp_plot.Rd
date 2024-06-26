@@ -11,9 +11,9 @@ ecp_plot(
   xlim = NULL,
   ylim = NULL,
   x = NULL,
-  lambda = 6,
-  gamma = 0.3,
-  phi = 30,
+  lambda,
+  gamma,
+  phi,
   log = FALSE,
   func_type,
   title,
@@ -23,17 +23,19 @@ ecp_plot(
 }
 \arguments{
 \item{data_type}{specifies whether the input is a x vector of data values or
-an expression.}
+an expression. Possible types are
+- "data" for data values,
+- "expression" for expression.}
 
-\item{from}{lower x axis limit.}
+\item{from}{lower x axis limit, by default from = 0.}
 
-\item{to}{upper x axis limit.}
+\item{to}{upper x axis limit, by default to = 1.}
 
-\item{xlim}{x axis limits.}
+\item{xlim}{x axis limits, by default xlim = c(from, to).}
 
 \item{ylim}{y axis limits.}
 
-\item{x}{vector of data values.}
+\item{x}{vector of data values when data_type = "data".}
 
 \item{lambda, gamma}{parameter values > 0.}
 
@@ -41,7 +43,14 @@ an expression.}
 
 \item{log}{logical value.}
 
-\item{func_type}{specifies the type of function to be plotted.}
+\item{func_type}{specifies the type of function to be plotted. Possible
+types are
+- "density" for density plot,
+- "hazard" for hazard plot,
+- "cumulative hazard" for cumulative hazard plot,
+- "survival" for survival plot,
+- "cumulative distribution" for cumulative distribution plot,
+- "quantile" for quantile plot.}
 
 \item{title}{title of the graphic.}
 
@@ -63,8 +72,13 @@ distribution.
 }
 \examples{
 
-ecp_plot(data_type = "expression", from = 0, to = 1,
+ecp_plot(data_type = "expression", lambda = 6, gamma = 0.3, phi = 30,
 func_type = "cumulative distribution",
 title = "Cumulative Distribution Function (Expression)")
 #  Example of plotting cumulative distribution using an expression
+
+ecp_plot(data_type = "expression", lambda = 6, gamma = 0.3, phi = 30,
+func_type = "hazard", title = "Hazard Function (Expression)")
+#  Example of plotting an unimodal hazard function using an expression
+
 }

@@ -8,17 +8,19 @@
 #' distribution.
 #'
 #' @param data_type specifies whether the input is a x vector of data values or
-#' an expression.
+#' an expression. Possible types are
+#' - "data" for data values,
+#' - "expression" for expression.
 #'
-#' @param from lower x axis limit.
+#' @param from lower x axis limit, by default from = 0.
 #'
-#' @param to upper x axis limit.
+#' @param to upper x axis limit, by default to = 1.
 #'
-#' @param xlim x axis limits.
+#' @param xlim x axis limits, by default xlim = c(from, to).
 #'
 #' @param ylim y axis limits.
 #'
-#' @param x vector of data values.
+#' @param x vector of data values when data_type = "data".
 #'
 #' @param lambda,gamma  parameter values > 0.
 #'
@@ -26,7 +28,14 @@
 #'
 #' @param log logical value.
 #'
-#' @param func_type specifies the type of function to be plotted.
+#' @param func_type specifies the type of function to be plotted. Possible
+#' types are
+#' - "density" for density plot,
+#' - "hazard" for hazard plot,
+#' - "cumulative hazard" for cumulative hazard plot,
+#' - "survival" for survival plot,
+#' - "cumulative distribution" for cumulative distribution plot,
+#' - "quantile" for quantile plot.
 #'
 #' @param title title of the graphic.
 #'
@@ -42,17 +51,22 @@
 #'
 #' @examples
 #'
-#' ecp_plot(data_type = "expression", from = 0, to = 1,
+#' ecp_plot(data_type = "expression", lambda = 6, gamma = 0.3, phi = 30,
 #' func_type = "cumulative distribution",
 #' title = "Cumulative Distribution Function (Expression)")
 #' #  Example of plotting cumulative distribution using an expression
+#'
+#' ecp_plot(data_type = "expression", lambda = 6, gamma = 0.3, phi = 30,
+#' func_type = "hazard", title = "Hazard Function (Expression)")
+#' #  Example of plotting an unimodal hazard function using an expression
+#'
 #' @export
 #'
 
 # Define the function for plotting
 
 ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
-                     ylim = NULL, x = NULL, lambda = 6, gamma = 0.3, phi = 30,
+                     ylim = NULL, x = NULL, lambda, gamma, phi,
                      log = FALSE, func_type, title, col = "black", lty = 1) {
 
   # Set default plotting range if not provided
