@@ -3,6 +3,7 @@
 #' Plot function
 #'
 #' @description
+#'
 #' Plots the density, cumulative distribution, hazard, cumulative hazard,
 #' survival and quantile functions of the extended Chen-Poisson (ecp)
 #' distribution.
