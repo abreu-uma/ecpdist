@@ -52,11 +52,14 @@ an expression.}
 \value{
 If log = TRUE, numeric value of the logarithm of the function.
 
+If cum_haz = TRUE, numeric value of the cumulative hazard function.
+
 graphic of the chosen ecp function.
 }
 \description{
-Plots the density, cumulative distribution, hazard, survival and quantile
-functions of the extended Chen-Poisson (ecp) distribution.
+Plots the density, cumulative distribution, hazard, cumulative hazard,
+survival and quantile functions of the extended Chen-Poisson (ecp)
+distribution.
 }
 \examples{
 

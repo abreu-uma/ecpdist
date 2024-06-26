@@ -3,8 +3,9 @@
 #' Plot function
 #'
 #' @description
-#' Plots the density, cumulative distribution, hazard, survival and quantile
-#' functions of the extended Chen-Poisson (ecp) distribution.
+#' Plots the density, cumulative distribution, hazard, cumulative hazard,
+#' survival and quantile functions of the extended Chen-Poisson (ecp)
+#' distribution.
 #'
 #' @param data_type specifies whether the input is a x vector of data values or
 #' an expression.
@@ -35,6 +36,8 @@
 #'
 #' @return If log = TRUE, numeric value of the logarithm of the function.
 #'
+#' @return If cum_haz = TRUE, numeric value of the cumulative hazard function.
+#'
 #' @return graphic of the chosen ecp function.
 #'
 #' @examples
@@ -53,14 +56,20 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
                      log = FALSE, func_type, title, col = "black", lty = 1) {
 
   # Set default plotting range if not provided
+
   if (is.null(from)) from <- 0
   if (is.null(to)) to <- 1
   if (is.null(xlim)) xlim <- c(from, to)
 
   # Define the expressions based on func_type
+
   func <- switch(func_type,
                  "density" = function(x) decp(x, lambda, gamma, phi, log),
                  "hazard" = function(x) hecp(x, lambda, gamma, phi, log),
+                 "cumulative hazard" = function(x) {
+                                                    secp(x, lambda, gamma, phi,
+                                                         lower_tail = FALSE,
+                                                         cum_haz = TRUE)},
                  "survival" = function(x) {
                                            secp(x, lambda, gamma, phi,
                                                 lower_tail = FALSE,
@@ -76,13 +85,17 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
                                                 lower_tail = TRUE,
                                                 log_p = FALSE)},
                  stop("Invalid function type. Use 'density', 'hazard',
-                      'survival', 'cumulative distribution' or 'quantile'."))
+                      'cumulative hazard', 'survival', 'cumulative distribution'
+                      or 'quantile'."))
 
   if (data_type == "expression") {
+
     # Plot based on expression
+
     ylab <- switch(func_type,
                    "density" = "Density",
                    "hazard" = "Hazard",
+                   "cumulative hazard" = "Cumulative Hazard",
                    "survival" = "Survival",
                    "cumulative distribution" = "Cumulative Distribution",
                    "quantile" = "Quantile")
@@ -97,6 +110,9 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
     y_values <- switch(func_type,
                        "density" = decp(x, lambda, gamma, phi, log),
                        "hazard" = hecp(x, lambda, gamma, phi, log),
+                       "cumulative hazard" = secp(x, lambda, gamma, phi,
+                                                  lower_tail = FALSE,
+                                                  cum_haz = TRUE),
                        "survival" = secp(x, lambda, gamma, phi,
                                          lower_tail = FALSE, cum_haz = FALSE),
                        "cumulative distribution" = pecp(x, lambda, gamma, phi,
@@ -105,8 +121,8 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
                        "quantile" = qecp(x, lambda, gamma, phi,
                                          lower_tail = TRUE, log_p = FALSE),
                        stop("Invalid function type. Use 'density', 'hazard',
-                            'survival', 'cumulative distribution' or
-                            'quantile'."))
+                            'cumulative hazard', 'survival',
+                            'cumulative distribution' or 'quantile'."))
     plot(x, y_values, type = "l", xlim = xlim, ylim = ylim, col = col,
          lty = lty, main = title, xlab = "x", ylab = func_type)
 
