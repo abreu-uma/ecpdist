@@ -6,7 +6,7 @@ ecpdist is a package that computes the values of the cumulative distribution, su
 
 # Installation
 
-You can install the released version of the development version from GitHub with::
+You can install the released version of the development version from GitHub with:
 
 install.packages("devtools")
 
