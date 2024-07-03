@@ -10,7 +10,7 @@
 #'
 #' @param lambda,gamma  parameter values > 0.
 #'
-#' @param phi parameter value > 0 or < 0.
+#' @param phi parameter value !=0.
 #'
 #' @param lower_tail similar to lower.tail.
 #'
@@ -37,7 +37,7 @@ qecp <- function(p, lambda, gamma, phi, lower_tail = TRUE, log_p = FALSE) {
 
   # Check for invalid arguments
   if (any(p < 0, p > 1) || min(lambda <= 0) ||
-        min(gamma <= 0) || min(phi == 0)) {
+        min(gamma <= 0) || phi == 0) {
     stop("Invalid arguments")
   }
 
