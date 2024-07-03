@@ -40,7 +40,7 @@ secp <- function(q, lambda, gamma, phi, lower_tail = FALSE,
 
   # Check for invalid arguments
   if (any(q < 0) || min(lambda <= 0) || min(gamma <= 0) ||
-        min(phi == 0)) {
+        phi == 0) {
     stop("Invalid arguments")
   }
 
