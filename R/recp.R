@@ -10,7 +10,7 @@
 #'
 #' @param lambda,gamma  parameter values > 0.
 #'
-#' @param phi parameter value > 0 or < 0.
+#' @param phi parameter value !=0.
 #'
 #' @return A vector of randomly generated numbers from the
 #' extended Chen-Poisson distribution.
