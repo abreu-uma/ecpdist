@@ -30,7 +30,7 @@ decp <- function(x, lambda, gamma, phi, log = FALSE) {
 
   # Check for invalid arguments
   if (any(x < 0) || min(lambda <= 0) || min(gamma <= 0) ||
-        min(phi == 0)) {
+        phi == 0) {
     stop("Invalid arguments")
   }
 
