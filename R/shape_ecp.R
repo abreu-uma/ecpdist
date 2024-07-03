@@ -19,6 +19,13 @@
 #'
 #' @return Numeric value of the Bowley skewness or the Moors kurtosis.
 #'
+#' @details
+#' The Extended Chen-Poisson distribution have no closed-form expressions
+#' for the moments. Therefore, the classical measures of
+#' skewness and kurtosis based on moments are intractable. In such cases,
+#' quantile-based measures are often considered, namely the Bowley skewness and
+#' Moors kurtosis.
+#'
 #' @examples
 #' ecp_shape(2, 0.3, 30, measure = 'bowley') # Bowley skewness
 #'
@@ -39,10 +46,8 @@ ecp_shape <- function(lambda, gamma, phi, measure) {
 
   # Compute skewness ou kurtosis measure
   q <- qecp(p = seq(1 / 8, 7 / 8, 1 / 8), lambda, gamma, phi)
-  func <- switch(measure, bowley = as.numeric((q[2] - 2 * q[4] + q[6]) /
-                                                (q[6] - q[2])),
-                 moors = as.numeric((q[7] - q[5] - q[3] + q[1]) /
-                                      (q[6] - q[2])),
+  func <- switch(measure, bowley = (q[2] - 2 * q[4] + q[6]) / (q[6] - q[2]),
+                 moors = (q[7] - q[5] - q[3] + q[1]) / (q[6] - q[2]),
                  stop("Invalid measure type. Use 'bowley' or 'moors'."))
   return(func)
 }
