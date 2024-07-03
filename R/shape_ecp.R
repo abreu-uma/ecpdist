@@ -20,7 +20,7 @@
 #' @return Numeric value of the Bowley skewness or the Moors kurtosis.
 #'
 #' @examples
-#' ecp_shape(2, 0.3, 4, measure = 'bowley') # Bowley skewness
+#' ecp_shape(2, 0.3, 30, measure = 'bowley') # Bowley skewness
 #'
 #' @export
 #'
