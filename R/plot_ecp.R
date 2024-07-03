@@ -62,7 +62,7 @@
 #'
 #'#  Example of plotting cumulative distribution using an expression
 #'
-#' ecp_plot(data_type = "expression", lambda = 6, gamma = 0.3, phi = 30,
+#' ecp_plot(data_type = "expression", lambda = 2, gamma = 0.3, phi = 30,
 #' func_type = "cumulative distribution",
 #' title = "Cumulative Distribution Function (Expression)")
 #'
