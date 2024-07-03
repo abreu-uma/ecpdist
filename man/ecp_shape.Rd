@@ -25,7 +25,14 @@ Numeric value of the Bowley skewness or the Moors kurtosis.
 Computes robust skewness and kurtosis measures based on quantile function of
 the extended Chen-Poisson (ecp) distribution.
 }
+\details{
+The Extended Chen-Poisson distribution has no closed-form expression
+for the moments. Therefore, the classical measures of
+skewness and kurtosis based on moments are intractable. In such cases,
+quantile-based measures are often considered, namely the Bowley skewness and
+Moors kurtosis.
+}
 \examples{
-ecp_shape(2, 0.3, 4, measure = 'bowley') # Bowley skewness
+ecp_shape(2, 0.3, 30, measure = 'bowley') # Bowley skewness
 
 }
