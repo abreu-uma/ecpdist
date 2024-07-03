@@ -8,7 +8,7 @@
 #'
 #' @param lambda,gamma  parameter values > 0.
 #'
-#' @param phi parameter value > 0 or < 0.
+#' @param phi parameter value !=0.
 #'
 #' @param measure specifies the type of measure to be computed. Possible
 #' types are
@@ -20,7 +20,7 @@
 #' @return Numeric value of the Bowley skewness or the Moors kurtosis.
 #'
 #' @details
-#' The Extended Chen-Poisson distribution has no closed-form expressions
+#' The Extended Chen-Poisson distribution has no closed-form expression
 #' for the moments. Therefore, the classical measures of
 #' skewness and kurtosis based on moments are intractable. In such cases,
 #' quantile-based measures are often considered, namely the Bowley skewness and
