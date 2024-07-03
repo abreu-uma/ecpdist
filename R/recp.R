@@ -27,7 +27,7 @@ recp <- function(n, lambda, gamma, phi) {
   }
 
   # Check if arguments are valid
-  if (any(c(n, lambda, gamma) <= 0) || min(phi) == 0) {
+  if (any(c(n, lambda, gamma) <= 0) || phi == 0) {
     stop("Invalid arguments")
   }
 
