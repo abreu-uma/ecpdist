@@ -9,7 +9,7 @@ ecp_shape(lambda, gamma, phi, measure)
 \arguments{
 \item{lambda, gamma}{parameter values > 0.}
 
-\item{phi}{parameter value > 0 or < 0.}
+\item{phi}{parameter value !=0.}
 
 \item{measure}{specifies the type of measure to be computed. Possible
 types are
