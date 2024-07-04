@@ -11,7 +11,7 @@ hecp(x, lambda, gamma, phi, log = FALSE)
 
 \item{lambda, gamma}{parameter values > 0.}
 
-\item{phi}{parameter value > 0 or < 0.}
+\item{phi}{parameter value !=0.}
 
 \item{log}{logical value}
 }
