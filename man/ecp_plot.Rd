@@ -41,7 +41,7 @@ an expression. Possible types are
 
 \item{lambda, gamma}{parameter values > 0.}
 
-\item{phi}{parameter value > 0 or < 0.}
+\item{phi}{parameter value !=0.}
 
 \item{log}{logical value.}
 
