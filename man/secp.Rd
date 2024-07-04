@@ -11,7 +11,7 @@ secp(q, lambda, gamma, phi, lower_tail = FALSE, cum_haz = FALSE)
 
 \item{lambda, gamma}{parameter values > 0.}
 
-\item{phi}{parameter value > 0 or < 0.}
+\item{phi}{parameter value !=0.}
 
 \item{lower_tail}{similar to lower.tail}
 
