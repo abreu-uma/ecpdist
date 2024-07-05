@@ -1,7 +1,7 @@
 Package: ecpdist
 Type: Package
 Title: Extended Chen-Poisson Lifetime Distribution
-Version: 0.1.0
+Version: 0.2.0
 Author: Ana Abreu [aut, cre], Ivo Sousa-Ferreira [aut]
         Cristina Rocha [ctb]
 Maintainer: The package maintainer <abreu@staff.uma.pt>
