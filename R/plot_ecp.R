@@ -141,8 +141,8 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
                    "cumulative distribution" = "Cumulative Distribution",
                    "quantile" = "Quantile")
 
-    curve(expr = func, from = from, to = to, xlim = xlim, ylim = ylim,
-          col = col, lty = lty, main = title, xlab = "x", ylab = ylab)
+    graphics::curve(expr = func, from = from, to = to, xlim = xlim, ylim = ylim,
+                    col = col, lty = lty, main = title, xlab = "x", ylab = ylab)
 
   } else if (data_type == "data") {
     if (is.null(x)) {
