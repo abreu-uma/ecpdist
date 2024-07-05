@@ -11,7 +11,7 @@ recp(n, lambda, gamma, phi)
 
 \item{lambda, gamma}{parameter values > 0.}
 
-\item{phi}{parameter value !=0.}
+\item{phi}{parameter value != 0.}
 }
 \value{
 A vector of randomly generated numbers from the
