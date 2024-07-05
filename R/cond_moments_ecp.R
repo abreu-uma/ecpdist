@@ -1,9 +1,9 @@
-#### The conditional k-th raw moment of extended Chen-Poisson distribution ####
+#### The conditional k-th moment of extended Chen-Poisson distribution ####
 
-#' The conditional k-th raw moment of extended Chen-Poisson distribution
+#' The conditional k-th moment of extended Chen-Poisson distribution
 #'
 #' @description
-#' Computes the conditional k-th raw moment of the extended Chen-Poisson (ecp)
+#' Computes the conditional k-th moment of the extended Chen-Poisson (ecp)
 #' distribution.
 #'
 #' @param x vector of quantiles.
@@ -14,11 +14,11 @@
 #'
 #' @param phi parameter value != 0.
 #'
-#' @return Estimated value of conditional k-th raw moment, based on numerical
+#' @return Estimated value of conditional k-th moment, based on numerical
 #' integration, using the function integrate.
 #'
 #' @details
-#' To obtain the value of conditional k-th raw moment of the Extended
+#' To obtain the value of conditional k-th moment of the Extended
 #' Chen-Poisson distribution, it is necessary to use numerical integration. For
 #' that purpose, the R function integrate can be used (see details about
 #' function integrate).

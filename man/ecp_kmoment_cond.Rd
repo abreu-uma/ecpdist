@@ -2,7 +2,7 @@
 % Please edit documentation in R/cond_moments_ecp.R
 \name{ecp_kmoment_cond}
 \alias{ecp_kmoment_cond}
-\title{The conditional k-th raw moment of extended Chen-Poisson distribution}
+\title{The conditional k-th moment of extended Chen-Poisson distribution}
 \usage{
 ecp_kmoment_cond(x, k, lambda, gamma, phi)
 }
@@ -16,15 +16,15 @@ ecp_kmoment_cond(x, k, lambda, gamma, phi)
 \item{phi}{parameter value != 0.}
 }
 \value{
-Estimated value of conditional k-th raw moment, based on numerical
+Estimated value of conditional k-th moment, based on numerical
 integration, using the function integrate.
 }
 \description{
-Computes the conditional k-th raw moment of the extended Chen-Poisson (ecp)
+Computes the conditional k-th moment of the extended Chen-Poisson (ecp)
 distribution.
 }
 \details{
-To obtain the value of conditional k-th raw moment of the Extended
+To obtain the value of conditional k-th moment of the Extended
 Chen-Poisson distribution, it is necessary to use numerical integration. For
 that purpose, the R function integrate can be used (see details about
 function integrate).
