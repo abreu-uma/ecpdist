@@ -11,7 +11,7 @@ qecp(p, lambda, gamma, phi, lower_tail = TRUE, log_p = FALSE)
 
 \item{lambda, gamma}{parameter values > 0.}
 
-\item{phi}{parameter value !=0.}
+\item{phi}{parameter value != 0.}
 
 \item{lower_tail}{similar to lower.tail.}
 
