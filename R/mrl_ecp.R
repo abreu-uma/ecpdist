@@ -32,13 +32,17 @@ ecp_mrl <- function(x, lambda, gamma, phi) {
     stop("Invalid arguments")
   }
 
-  # Compute mean residual life function
+  # Define the function to integrate
 
   func <- function(y) {
     exp(- phi * y) * (log(1 - lambda^(- 1) * log(y)))^(1 / gamma)
   }
+
+  # Estimate the integral
   int <- integrate(Vectorize(func), lower = 0,
                    upper = exp(lambda * (1 - exp(x^gamma))))
+
+  # Compute mean residual life function
   totalfunc <- (phi * int$value) / (1 - exp(- phi * exp(lambda *
                                                           (1 - exp(x^gamma)))))
   - x
