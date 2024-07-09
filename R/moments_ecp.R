@@ -48,13 +48,17 @@ ecp_kmoment <- function(k, lambda, gamma, phi) {
     stop("Invalid arguments")
   }
 
-  # Compute k-th raw moment
+  # Define the function to integrate
 
   func <- function(y) {
     (phi * exp(- phi * y) * (log(1 - lambda^(-1) * log(y))) ^ (k / gamma)) /
       (1 - exp(- phi))
   }
+
+  # Estimate the integral
   integral <- stats::integrate(Vectorize(func), lower = 0, upper = 1)
+
+  # Compute k-th raw moment
   arr <- array(c(integral$value, integral$abs.error), dim = c(1, 2))
   dimnames(arr) <- list("", c("estimate ", "integral abs. error <"))
   return(arr)
