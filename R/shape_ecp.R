@@ -13,9 +13,9 @@
 #' @param measure specifies the type of measure to be computed. Possible
 #' types are
 #'
-#' -> 'bowley' for bowley skewness,
+#' ● 'bowley' for bowley skewness,
 #'
-#' -> 'moors' for Moors kurtosis.
+#' ● 'moors' for Moors kurtosis.
 #'
 #' @return Numeric value of the Bowley skewness or the Moors kurtosis.
 #'
