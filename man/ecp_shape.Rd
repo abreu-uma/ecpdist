@@ -14,9 +14,9 @@ ecp_shape(lambda, gamma, phi, measure)
 \item{measure}{specifies the type of measure to be computed. Possible
 types are
 
--> 'bowley' for bowley skewness,
+● 'bowley' for bowley skewness,
 
--> 'moors' for Moors kurtosis.}
+● 'moors' for Moors kurtosis.}
 }
 \value{
 Numeric value of the Bowley skewness or the Moors kurtosis.
