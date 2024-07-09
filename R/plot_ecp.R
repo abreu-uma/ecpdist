@@ -62,8 +62,8 @@
 #'
 #'#  Example of plotting cumulative distribution using an expression
 #'
-#' ecp_plot(data_type = "expression", lambda = 2, gamma = 0.3, phi = 30,
-#' func_type = "cumulative distribution",
+#' ecp_plot(data_type = "expression", from = 0, to = 6, lambda = 2, gamma = 0.3,
+#' phi = 30, func_type = "cumulative distribution",
 #' title = "Cumulative Distribution Function (Expression)")
 #'
 #'#  Example of plotting an unimodal hazard function using an expression
