@@ -11,9 +11,9 @@
 #' @param data_type specifies whether the input is a x vector of data values or
 #' an expression. Possible types are
 #'
-#' -> "data" for data values,
+#' ● "data" for data values,
 #'
-#' -> "expression" for expression.
+#' ● "expression" for expression.
 #'
 #' @param from lower x axis limit, by default from = 0.
 #'
