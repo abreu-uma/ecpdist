@@ -43,9 +43,9 @@ ecp_mrl <- function(x, lambda, gamma, phi) {
                    upper = exp(lambda * (1 - exp(x^gamma))))
 
   # Compute mean residual life function
-  totalfunc <- (phi * int$value) / (1 - exp(- phi * exp(lambda *
-                                                          (1 - exp(x^gamma)))))
-  - x
+  totalfunc <- (phi * int$value) /
+    (1 - exp(- phi * exp(lambda * (1 - exp(x^gamma))))) - x
+
   arr <- array(c(totalfunc, int$abs.error), dim = c(1, 2))
   dimnames(arr) <- list("", c("estimate", "integral abs. error <"))
   return(arr)
