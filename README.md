@@ -1,4 +1,8 @@
 
+  <!-- badges: start -->
+  [![R-CMD-check](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end -->
+
 # ecpdist
 Extended Chen-Poisson Lifetime Distribution
 
@@ -27,4 +31,7 @@ https://doi.org/10.57805/revstat.v21i2.405
 # Contact information
 
 abreu@staff.uma.pt
+
+
+
 
