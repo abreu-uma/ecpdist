@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the following metadata."
+title: "Extended Chen-Poisson Lifetime Distribution"
+version: "0.2.0"
+date-released: "2024-07-05"
+authors:
+  - family-names: "Abreu"
+    given-names: "Ana"
+  - family-names: "Sousa-Ferreira"
+    given-names: "Ivo"
+url: "https://github.com/abreu-uma/ecpdist"
+repository-code: "https://github.com/abreu-uma/ecpdist"
+license: "MIT + file LICENSE"
+keywords:
+  - R
+  - Probability distribution
