@@ -1,0 +1,18 @@
+#### Citation file ####
+
+citation <- function() {
+
+ # Custom message to be displayed when users cite the package
+ message("If you use this software, please cite it using the following metadata.")
+
+ # Bibliographic entry for the citation
+  utils::bibentry(
+    bibtype = "Manual",
+    title = "Extended Chen-Poisson Lifetime Distribution",
+    author = c(person(given = "Ana", family = "Abreu")),
+    author = c(person(given = "Ivo", family = "Sousa-Ferreira")),
+    year = "2024",
+    note = "R package version 0.2.0",
+    url = "https://github.com/abreu-uma/ecpdist"
+  )
+}
