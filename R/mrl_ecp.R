@@ -33,20 +33,29 @@ ecp_mrl <- function(x, lambda, gamma, phi) {
   }
 
   # Define the function to integrate
-
   func <- function(y) {
-    exp(- phi * y) * (log(1 - lambda^(- 1) * log(y)))^(1 / gamma)
+    exp(-phi * y) * (log(1 - lambda^(-1) * log(y)))^(1 / gamma)
   }
 
-  # Estimate the integral
-  int <- integrate(Vectorize(func), lower = 0,
-                   upper = exp(lambda * (1 - exp(x^gamma))))
+  # Apply the integration for each element of the vector x
+  int_results <- sapply(x, function(xi) {
+    result <- integrate(Vectorize(func), lower = 0,
+                        upper = exp(lambda * (1 - exp(xi^gamma))))
+    c(value = result$value, abs.error = result$abs.error)
+  })
 
-  # Compute mean residual life function
-  totalfunc <- (phi * int$value) /
-    (1 - exp(- phi * exp(lambda * (1 - exp(x^gamma))))) - x
+  # Compute mean residual life function for each element in x
+  totalfunc <- sapply(seq_along(x), function(i) {
+    (phi * int_results[1, i]) /
+      (1 - exp(-phi * exp(lambda * (1 - exp(x[i]^gamma))))) - x[i]
+  })
 
-  arr <- array(c(totalfunc, int$abs.error), dim = c(1, 2))
-  dimnames(arr) <- list("", c("estimate", "integral abs. error <"))
-  return(arr)
+  # Prepare the output array
+  arr <- array(c(totalfunc, int_results[2, ]),
+               dim = c(length(x), 2))
+  dimnames(arr) <- list(NULL, c("estimate", "integral abs. error <"))
+
+  # The arr array now contains the final results
+  arr
+
 }
