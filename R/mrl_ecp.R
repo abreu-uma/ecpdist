@@ -39,8 +39,8 @@ ecp_mrl <- function(x, lambda, gamma, phi) {
 
   # Apply the integration for each element of the vector x
   int_results <- sapply(x, function(xi) {
-    result <- integrate(Vectorize(func), lower = 0,
-                        upper = exp(lambda * (1 - exp(xi^gamma))))
+    result <- stats::integrate(Vectorize(func), lower = 0,
+                               upper = exp(lambda * (1 - exp(xi^gamma))))
     c(value = result$value, abs.error = result$abs.error)
   })
 
@@ -50,10 +50,14 @@ ecp_mrl <- function(x, lambda, gamma, phi) {
       (1 - exp(-phi * exp(lambda * (1 - exp(x[i]^gamma))))) - x[i]
   })
 
-  # Prepare the output array
+  # Prepare the output array with x as row names
   arr <- array(c(totalfunc, int_results[2, ]),
                dim = c(length(x), 2))
-  dimnames(arr) <- list(NULL, c("estimate", "integral abs. error <"))
+  dimnames(arr) <- list(as.character(x), c("estimate", "integral abs. error <"))
+
+  # Add a label "x" as a column header for row names
+  colnames(arr) <- c("estimate", "integral abs. error <")
+  rownames(arr) <- paste0("x = ", rownames(arr))
 
   # The arr array now contains the final results
   arr
