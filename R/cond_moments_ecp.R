@@ -45,14 +45,28 @@ ecp_kmoment_cond <- function(x, k, lambda, gamma, phi) {
     exp(- phi * y) * (log(1 - lambda^(- 1) * log(y)))^(k / gamma)
   }
 
-  # Estimate the integral
-  integral <- stats::integrate(Vectorize(func), lower = 0, upper =
-                                 exp(lambda * (1 - exp(x^gamma))))
+  # Apply the integration for each element of the vector x
+  int_results <- sapply(x, function(xi) {
+    result <- stats::integrate(Vectorize(func), lower = 0,
+                               upper = exp(lambda * (1 - exp(xi^gamma))))
+    c(value = result$value, abs.error = result$abs.error)
+  })
 
-  # Compute conditional k-th raw moment
-  totalfunc <- (phi * integral$value) /
-    (1 - exp(- phi * exp(lambda * (1 - exp(x^gamma)))))
-  arr <- array(c(totalfunc, integral$abs.error), dim = c(1, 2))
-  dimnames(arr) <- list("", c("estimate ", "integral abs. error <"))
-  return(arr)
+  # Compute conditional k-th raw moment for each element in x
+  totalfunc <- sapply(seq_along(x), function(i) {
+    (phi * int_results[1, i]) /
+      (1 - exp(- phi * exp(lambda * (1 - exp(x[i]^gamma)))))
+  })
+
+  # Prepare the output array with x as row names
+  arr <- array(c(totalfunc, int_results[2, ]), dim = c(length(x), 2))
+  dimnames(arr) <- list(as.character(x),
+                        c("estimate ", "integral abs. error <"))
+
+  # Add a label "x" as a column header for row names
+  colnames(arr) <- c("estimate", "integral abs. error <")
+  rownames(arr) <- paste0("x = ", rownames(arr))
+
+  # The arr array now contains the final results
+  arr
 }
