@@ -14,4 +14,6 @@ and `ecp_mrl`.
 * Implemented the core functions: `hecp`, `recp`, `pecp`, `qecp`, `secp`, and 
 `decp`.
 
+# ecpdist 0.0.9000 (2024-04-20)
 
+* Add ecpdist.Rproj.
