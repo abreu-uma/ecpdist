@@ -15,12 +15,12 @@
 #' as well as integral absolute error obtained from the function integrate.
 #'
 #' @details
-#' To obtain the value of k-th raw moment of the Extended
-#' Chen-Poisson distribution, it is necessary to use numerical integration. For
-#' that purpose, the R function integrate can be used, which returns the
-#' estimated value of the integral and also the integral absolute error
-#' (see details about function integrate). Therefore, to obtain the variance,
-#' the first component of each k-th raw moments must be selected.
+#' To obtain the value of k-th raw moment of the Extended Chen-Poisson
+#' distribution, it is necessary to use numerical integration. For that purpose,
+#' the R function 'integrate()' can be used, which returns the estimated value
+#' of the integral and also the integral absolute error (see details about
+#' function 'integrate()'). Therefore, to obtain the variance, the first
+#' component of each k-th raw moments must be selected.
 #'
 #' @examples
 #' ecp_kmoment(k = 1, lambda = .1, gamma = .5, phi = - .2) # First raw moment.
