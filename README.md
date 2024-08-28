@@ -1,6 +1,6 @@
 Extended Chen-Poisson Lifetime Distribution
 ================
-2024-08-23
+2024-08-28
 
 # ecpdist
 
@@ -49,6 +49,3 @@ Chen-Poisson Lifetime Distribution. REVSTAT – Statistical Journal,
 
 [![R-CMD-check](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
