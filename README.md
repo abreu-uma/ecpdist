@@ -2,6 +2,11 @@ Extended Chen-Poisson Lifetime Distribution
 ================
 2024-08-28
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 # ecpdist
 
 `ecpdist` is a package that computes the values of the cumulative
@@ -44,8 +49,3 @@ Chen-Poisson Lifetime Distribution. REVSTAT – Statistical Journal,
 ## Contact information
 
 <abreu@staff.uma.pt>
-
-<!-- badges: start -->
-
-[![R-CMD-check](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml)
-<!-- badges: end -->
