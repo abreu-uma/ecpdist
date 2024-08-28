@@ -4,6 +4,10 @@ output: github_document
 date: "`r Sys.Date()`"
 ---
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -51,9 +55,7 @@ Chen-Poisson Lifetime Distribution. REVSTAT – Statistical Journal,
 
 <abreu@staff.uma.pt>
 
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/abreu-uma/ecpdist/actions/workflows/R-CMD-check.yaml)
-<!-- badges: end -->
+
 
 
 
