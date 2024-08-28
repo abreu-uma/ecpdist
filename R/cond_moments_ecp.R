@@ -20,11 +20,12 @@
 #' @details
 #' The conditional k-th moment of a distribution is given by E(X^k | X > x). To
 #' obtain this value for the Extended Chen-Poisson distribution, it is necessary
-#' to use numerical integration. For that purpose, the R function integrate can
-#' be used (see details about function integrate).
+#' to use numerical integration. For that purpose, the R function 'integrate()'
+#' can be used (see details about function 'integrate()'). Note that when k = 1
+#' and x = 0, the conditional moment is equal to the expected value, i.e.,
+#' E(X | X > 0) = E(X).
 #'
 #' @examples
-#' # First conditional moment for x = 0. Note that, in this case, E(X|X>0)=E(X).
 #' ecp_kmoment_cond(x = 0, k = 1, lambda = .1, gamma = .5, phi = - .2)
 #'
 #' @export
