@@ -4,8 +4,9 @@ title: " ecpdist news"
 
 
 # ecpdist 0.2.1
+### (2024-08-29)
 
-* Initial CRAN submission (upcoming).
+* Initial CRAN submission.
 
 # ecpdist 0.2.0 
 ### (2024-07-05)
