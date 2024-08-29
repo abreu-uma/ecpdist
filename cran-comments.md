@@ -36,3 +36,10 @@
 * Windows-latest on GitHub Actions
 * Windows-2022 on GitHub Actions
 * Windows-2019 on GitHub Actions
+
+## Additional checks
+
+The package was downloaded and successfully tested on:
+
+* Windows 11
+* macOS 13.0.1
