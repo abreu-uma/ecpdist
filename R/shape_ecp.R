@@ -10,12 +10,11 @@
 #'
 #' @param phi parameter value != 0.
 #'
-#' @param measure specifies the type of measure to be computed. Possible
-#' types are
+#' @param measure Specifies the type of measure to be computed. Possible
+#' types are:
 #'
-#' ● 'bowley' for bowley skewness,
-#'
-#' ● 'moors' for Moors kurtosis.
+#'  - 'bowley' for Bowley skewness,
+#'  - 'moors' for Moors kurtosis.
 #'
 #' @return Numeric value of the Bowley skewness or the Moors kurtosis.
 #'
