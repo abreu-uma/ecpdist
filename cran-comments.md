@@ -1,3 +1,8 @@
+## Resubmission
+
+Errors and warnings have been eliminated. There is still one note remaining, 
+which is a false positive.
+
 ## R CMD check results
 
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
