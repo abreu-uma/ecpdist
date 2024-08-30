@@ -10,24 +10,20 @@ Authors@R:
            role = "aut", comment = c(ORCID = "0000-0001-5526-3594")),
     person(given = "Cristina", family = "Rocha", 
            role = "ctb"))
-Author: Ana Abreu [aut, cre, cph], Ivo Sousa-Ferreira [aut]
-        Cristina Rocha [ctb]
 Maintainer: Ana Abreu <abreu@staff.uma.pt>
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Description: Computes the Extended Chen-Poisson (ecp) distribution, survival, 
     density, hazard, cumulative hazard and quantile functions. It also allows 
-    to generate a pseudo-random sample from the ecp distribution. The 
-    corresponding graphics are available. Functions to obtain measures of 
-    skewness and kurtosis, k-th raw moments, conditional k-th moments and mean 
-    residual life function were added. 
+    to generate a pseudo-random sample from this distribution. The corresponding 
+    graphics are available. Functions to obtain measures of skewness and 
+    kurtosis, k-th raw moments, conditional k-th moments and mean 
+    residual life function were added. For details about ecp distribution, see 
+    Sousa-Ferreira, I., Abreu, A.M. & Rocha, C. (2023). 
+    <doi:10.57805/revstat.v21i2.405>.
 License: GPL-3 + file LICENSE
 URL: <https://github.com/abreu-uma/ecpdist>
 Encoding: UTF-8
 LazyData: true
-References: Sousa-Ferreira, I., Abreu, A.M. & Rocha, C. (2023). 
-    The Extended Chen-Poisson Lifetime Distribution. 
-    REVSTAT – Statistical Journal, 21(2), 173-196. 
-    <doi:10.57805/revstat.v21i2.405>
 RoxygenNote: 7.3.1
