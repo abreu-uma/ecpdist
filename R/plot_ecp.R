@@ -11,9 +11,9 @@
 #' @param data_type specifies whether the input is a x vector of data values or
 #' an expression. Possible types are
 #'
-#' ● "data" for data values,
+#' - 'data' for data values,
 #'
-#' ● "expression" for expression.
+#' - 'expression' for expression.
 #'
 #' @param from lower x axis limit, by default from = 0.
 #'
@@ -34,17 +34,17 @@
 #' @param func_type specifies the type of function to be plotted. Possible
 #' types are
 #'
-#' ● "density" for density plot,
+#' - 'density' for density plot,
 #'
-#' ● "hazard" for hazard plot,
+#' - 'hazard' for hazard plot,
 #'
-#' ● "cumulative hazard" for cumulative hazard plot,
+#' - 'cumulative hazard' for cumulative hazard plot,
 #'
-#' ● "survival" for survival plot,
+#' - 'survival' for survival plot,
 #'
-#' ● "cumulative distribution" for cumulative distribution plot,
+#' - 'cumulative distribution' for cumulative distribution plot,
 #'
-#' ● "quantile" for quantile plot.
+#' - 'quantile' for quantile plot.
 #'
 #' @param title title of the graphic.
 #'
