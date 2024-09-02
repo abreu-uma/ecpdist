@@ -1,3 +1,7 @@
+## Resubmission 2
+
+File LICENSE deleted and also "+ License" in DESCRIPTION file
+
 ## Resubmission
 
 Errors and warnings have been eliminated. There is still one note remaining, 
