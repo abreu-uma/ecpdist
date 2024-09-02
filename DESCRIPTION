@@ -22,7 +22,7 @@ Description: Computes the Extended Chen-Poisson (ecp) distribution, survival,
     residual life function were added. For details about ecp distribution, see 
     Sousa-Ferreira, I., Abreu, A.M. & Rocha, C. (2023). 
     <doi:10.57805/revstat.v21i2.405>.
-License: GPL-3 + file LICENSE
+License: GPL-3
 URL: <https://github.com/abreu-uma/ecpdist>
 Encoding: UTF-8
 LazyData: true
