@@ -2,8 +2,7 @@ Package: ecpdist
 Version: 0.2.1
 Date: 2024-08-29
 Title: Extended Chen-Poisson Lifetime Distribution
-Authors@R: 
-   c(person(given = "Ana", family = "Abreu", 
+Authors@R: c(person(given = "Ana", family = "Abreu", 
            role = c("aut","cre","cph"), email = "abreu@staff.uma.pt",
            comment = c(ORCID = "0000-0002-6155-8492")),
     person(given = "Ivo", family = "Sousa-Ferreira", 
@@ -11,8 +10,7 @@ Authors@R:
     person(given = "Cristina", family = "Rocha", 
            role = "ctb"))
 Maintainer: Ana Abreu <abreu@staff.uma.pt>
-Suggests: 
-    testthat (>= 3.0.0)
+Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Description: Computes the Extended Chen-Poisson (ecp) distribution, survival, 
     density, hazard, cumulative hazard and quantile functions. It also allows 
