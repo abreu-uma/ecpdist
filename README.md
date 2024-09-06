@@ -31,7 +31,7 @@ install.packages("devtools")
 devtools::install_github("abreu-uma/ecpdist")
 ```
 
-### From CRAN (aspirational, after acceptance)
+### From CRAN
 
 You can install the released version of `ecpdist` from
 [CRAN](https://CRAN.R-project.org) with:
