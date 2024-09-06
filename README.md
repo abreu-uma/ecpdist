@@ -1,6 +1,6 @@
 Extended Chen-Poisson Lifetime Distribution
 ================
-2024-08-28
+2024-09-06
 
 <!-- badges: start -->
 
@@ -31,7 +31,7 @@ install.packages("devtools")
 devtools::install_github("abreu-uma/ecpdist")
 ```
 
-### From CRAN
+### From CRAN (aspirational, after acceptance)
 
 You can install the released version of `ecpdist` from
 [CRAN](https://CRAN.R-project.org) with:
