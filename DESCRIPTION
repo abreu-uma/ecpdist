@@ -1,5 +1,5 @@
 Package: ecpdist
-Version: 0.2.1
+Version: 0.2.1.9000
 Date: 2024-08-29
 Title: Extended Chen-Poisson Lifetime Distribution
 Authors@R: c(person(given = "Ana", family = "Abreu", 
