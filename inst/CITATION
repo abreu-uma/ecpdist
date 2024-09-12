@@ -1,17 +1,14 @@
-#### Citation file ####
-
-citation <- function() {
-
- # "If you use this software, please cite it using the following metadata."
-
- # Bibliographic entry for the citation
-  utils::bibentry(
+utils::bibentry(
     bibtype = "Manual",
     title = "{ecpdist}: Extended Chen-Poisson Lifetime Distribution",
-    author = c(person(given = "Ana", family = "Abreu"),
-    person(given = "Ivo", family = "Sousa-Ferreira")),
+    author = c(
+      utils::person(given = "Ana", family = "Abreu"),
+      utils::person(given = "Ivo", family = "Sousa-Ferreira")
+    ),
     year = "2024",
-    note = "R package version 0.2.1",
+   note = "R package version 0.2.1. For more information, visit
+   https://github.com/abreu-uma/ecpdist and
+   https://cran.r-project.org/web//packages/ecpdist/index.html",
     url = "https://cran.r-project.org/web//packages/ecpdist/index.html"
   )
-}
+
