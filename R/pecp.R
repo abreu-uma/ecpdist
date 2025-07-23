@@ -1,6 +1,6 @@
-#### Distribution function ####
+#### Distribution function of the ecp distribution ####
 
-#' Distribution function
+#' Distribution function of the ecp distribution
 #'
 #' @description
 #' Compute the cumulative distribution function of the extended

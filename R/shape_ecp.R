@@ -1,4 +1,4 @@
-#### Bowley skewness and Moors kurtosis ####
+#### Bowley skewness and Moors kurtosis of the ecp distribution ####
 
 #' Bowley skewness and Moors kurtosis of the ecp distribution
 #'

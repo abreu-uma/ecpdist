@@ -1,4 +1,4 @@
-#### Hazard function ####
+#### Hazard function of the ecp distribution ####
 
 #' Hazard function of the ecp distribution
 #'

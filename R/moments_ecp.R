@@ -1,4 +1,4 @@
-#### The k-th raw moment of extended Chen-Poisson distribution ####
+#### The k-th raw moment of the ecp distribution ####
 
 #' The k-th raw moment of the extended Chen-Poisson distribution
 #'

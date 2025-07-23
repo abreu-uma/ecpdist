@@ -1,6 +1,6 @@
-#### Survival function ####
+#### Survival function of the ecp distribution ####
 
-#' Survival function
+#' Survival function of the ecp distribution
 #'
 #' @description
 #' Compute the survival function of the extended Chen-Poisson (ecp)

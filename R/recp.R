@@ -1,6 +1,6 @@
-#### Function to generate a pseudo-random sample ####
+#### Function to generate a pseudo-random sample of the ecp distribution ####
 
-#' Function to generate a pseudo-random sample
+#' Function to generate a pseudo-random sample of the ecp distribution
 #'
 #' @description
 #' Generate a pseudo-random sample, without censoring, from the

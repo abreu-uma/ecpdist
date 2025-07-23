@@ -1,6 +1,6 @@
-#### Quantile function ####
+#### Quantile function of the ecp distribution ####
 
-#' Quantile function
+#' Quantile function of the ecp distribution
 #'
 #' @description
 #' Compute the quantile function of the extended Chen-Poisson (ecp)

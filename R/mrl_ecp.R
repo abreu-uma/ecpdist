@@ -1,4 +1,4 @@
-#### Mean residual life function ####
+#### Mean residual life function of the ecp distribution ####
 
 #' Mean residual life function of the ecp distribution
 #'
