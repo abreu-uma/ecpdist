@@ -64,7 +64,7 @@ ecp_mrl <- function(x, lambda, gamma, phi) {
   # Add a label "x" as a column header for row names
 
   colnames(arr) <- c("estimate", "integral abs. error <")
-  rownames(arr) <- paste0("x = ", rownames(arr))
+  rownames(arr) <- paste0("x = ", rownames(arr), "  ")
 
   # The arr array now contains the final results
 
