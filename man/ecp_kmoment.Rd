@@ -2,7 +2,7 @@
 % Please edit documentation in R/moments_ecp.R
 \name{ecp_kmoment}
 \alias{ecp_kmoment}
-\title{The k-th raw moment of extended Chen-Poisson distribution}
+\title{The k-th raw moment of the extended Chen-Poisson distribution}
 \usage{
 ecp_kmoment(k, lambda, gamma, phi)
 }

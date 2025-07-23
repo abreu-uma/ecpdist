@@ -1,6 +1,6 @@
 #### Mean residual life function ####
 
-#' Mean residual life function
+#' Mean residual life function of the ecp distribution
 #'
 #' @description
 #' Computes the mean residual life function of the extended Chen-Poisson (ecp)

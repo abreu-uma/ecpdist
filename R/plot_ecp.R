@@ -1,6 +1,6 @@
 #### Plot function ####
 
-#' Plot function
+#' Plot function of the ecp distribution
 #'
 #' @description
 #'

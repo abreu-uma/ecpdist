@@ -2,7 +2,7 @@
 % Please edit documentation in R/hecp.R
 \name{hecp}
 \alias{hecp}
-\title{Hazard function}
+\title{Hazard function of the ecp distribution}
 \usage{
 hecp(x, lambda, gamma, phi, log = FALSE)
 }

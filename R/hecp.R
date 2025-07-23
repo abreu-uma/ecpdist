@@ -1,6 +1,6 @@
 #### Hazard function ####
 
-#' Hazard function
+#' Hazard function of the ecp distribution
 #'
 #' @description
 #' Compute the hazard function of the extended Chen-Poisson (ecp) distribution.

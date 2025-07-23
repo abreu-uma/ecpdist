@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_ecp.R
 \name{ecp_plot}
 \alias{ecp_plot}
-\title{Plot function}
+\title{Plot function of the ecp distribution}
 \usage{
 ecp_plot(
   data_type,

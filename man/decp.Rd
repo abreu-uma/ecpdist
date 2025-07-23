@@ -2,7 +2,7 @@
 % Please edit documentation in R/decp.R
 \name{decp}
 \alias{decp}
-\title{Density function}
+\title{Density function of the ecp distribution}
 \usage{
 decp(x, lambda, gamma, phi, log = FALSE)
 }

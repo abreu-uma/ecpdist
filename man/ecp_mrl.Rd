@@ -2,7 +2,7 @@
 % Please edit documentation in R/mrl_ecp.R
 \name{ecp_mrl}
 \alias{ecp_mrl}
-\title{Mean residual life function}
+\title{Mean residual life function of the ecp distribution}
 \usage{
 ecp_mrl(x, lambda, gamma, phi)
 }

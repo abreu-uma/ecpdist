@@ -2,7 +2,7 @@
 % Please edit documentation in R/cond_moments_ecp.R
 \name{ecp_kmoment_cond}
 \alias{ecp_kmoment_cond}
-\title{The conditional k-th moment of extended Chen-Poisson distribution}
+\title{The conditional k-th moment of the extended Chen-Poisson distribution}
 \usage{
 ecp_kmoment_cond(x, k, lambda, gamma, phi)
 }

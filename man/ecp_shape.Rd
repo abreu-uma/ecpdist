@@ -2,7 +2,7 @@
 % Please edit documentation in R/shape_ecp.R
 \name{ecp_shape}
 \alias{ecp_shape}
-\title{Bowley skewness and Moors kurtosis}
+\title{Bowley skewness and Moors kurtosis of the ecp distribution}
 \usage{
 ecp_shape(lambda, gamma, phi, measure)
 }

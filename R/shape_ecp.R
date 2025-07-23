@@ -1,6 +1,6 @@
 #### Bowley skewness and Moors kurtosis ####
 
-#' Bowley skewness and Moors kurtosis
+#' Bowley skewness and Moors kurtosis of the ecp distribution
 #'
 #' @description
 #' Computes robust skewness and kurtosis measures based on quantile function of
