@@ -1,6 +1,6 @@
-#### The conditional k-th moment of extended Chen-Poisson distribution ####
+#### The conditional k-th moment of the extended Chen-Poisson distribution ####
 
-#' The conditional k-th moment of extended Chen-Poisson distribution
+#' The conditional k-th moment of the extended Chen-Poisson distribution
 #'
 #' @description
 #' Computes the conditional k-th moment of the extended Chen-Poisson (ecp)
