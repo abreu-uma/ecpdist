@@ -33,16 +33,19 @@
 ecp_kmoment <- function(k, lambda, gamma, phi) {
 
   # Check if arguments are numeric
+
   if (!all(sapply(list(k, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
 
   # Check if k is a positive integer
+
   if (!is.numeric(k) || k != as.integer(k) || k < 1) {
     stop("Parameter k must be a positive integer (1, 2, 3, ...).")
   }
 
-  # Check for invalid arguments
+  # Check for invalid
+
   if (min(lambda <= 0) || min(gamma <= 0) ||
         phi == 0) {
     stop("Invalid arguments")
@@ -56,9 +59,11 @@ ecp_kmoment <- function(k, lambda, gamma, phi) {
   }
 
   # Estimate the integral
+
   integral <- stats::integrate(Vectorize(func), lower = 0, upper = 1)
 
   # Compute k-th raw moment
+
   arr <- array(c(integral$value, integral$abs.error), dim = c(1, 2))
   dimnames(arr) <- list("", c("estimate ", "integral abs. error <"))
   return(arr)

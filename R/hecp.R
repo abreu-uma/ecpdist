@@ -24,11 +24,13 @@
 hecp <- function(x, lambda, gamma, phi, log = FALSE) {
 
   # Check if arguments are numeric
+
   if (!all(sapply(list(x, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
 
   # Check for invalid arguments
+
   if (any(x < 0) || min(lambda <= 0) || min(gamma <= 0) ||
         phi == 0) {
     stop("Invalid arguments")
@@ -41,6 +43,7 @@ hecp <- function(x, lambda, gamma, phi, log = FALSE) {
     (exp(phi * exp(lambda * (1 - exp(x^gamma)))) - 1)
 
   # Convert hazard function to log scale if log is TRUE
+
   if (log)
     hf <- log(hf)
 

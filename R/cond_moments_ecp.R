@@ -1,4 +1,4 @@
-#### The conditional k-th moment of the extended Chen-Poisson distribution ####
+#### The conditional k-th moment of the ecp distribution ####
 
 #' The conditional k-th moment of the extended Chen-Poisson distribution
 #'
@@ -31,22 +31,27 @@
 #' @export
 #'
 ecp_kmoment_cond <- function(x, k, lambda, gamma, phi) {
+
   # Check if arguments are numeric
+
   if (!all(sapply(list(x, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
 
   # Check for invalid arguments
+
   if ((min(x) < 0) || min(lambda <= 0) || min(gamma <= 0) || phi == 0) {
     stop("Invalid arguments")
   }
 
   # Define the function to integrate
+
   func <- function(y) {
     exp(- phi * y) * (log(1 - lambda^(- 1) * log(y)))^(k / gamma)
   }
 
   # Apply the integration for each element of the vector x
+
   int_results <- sapply(x, function(xi) {
     result <- stats::integrate(Vectorize(func), lower = 0,
                                upper = exp(lambda * (1 - exp(xi^gamma))))
@@ -54,20 +59,24 @@ ecp_kmoment_cond <- function(x, k, lambda, gamma, phi) {
   })
 
   # Compute conditional k-th raw moment for each element in x
+
   totalfunc <- sapply(seq_along(x), function(i) {
     (phi * int_results[1, i]) /
       (1 - exp(- phi * exp(lambda * (1 - exp(x[i]^gamma)))))
   })
 
   # Prepare the output array with x as row names
+
   arr <- array(c(totalfunc, int_results[2, ]), dim = c(length(x), 2))
   dimnames(arr) <- list(as.character(x),
                         c("estimate ", "integral abs. error <"))
 
   # Add a label "x" as a column header for row names
+
   colnames(arr) <- c("estimate", "integral abs. error <")
   rownames(arr) <- paste0("x = ", rownames(arr))
 
   # The arr array now contains the final results
+
   arr
 }

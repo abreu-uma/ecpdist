@@ -22,16 +22,19 @@
 recp <- function(n, lambda, gamma, phi) {
 
   # Check if arguments are numeric
+
   if (!all(sapply(list(n, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
 
   # Check if arguments are valid
+
   if (any(c(n, lambda, gamma) <= 0) || phi == 0) {
     stop("Invalid arguments")
   }
 
   # Generate pseudo-random sample
+
   rd <- (log(1 - lambda^(-1) *
                log(1 - phi^(-1) * log(1 + (exp(phi) - 1) *
                                         stats::runif(n)))))^(1 / gamma)

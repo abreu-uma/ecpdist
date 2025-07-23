@@ -34,21 +34,25 @@ secp <- function(q, lambda, gamma, phi, lower_tail = FALSE,
                  cum_haz = FALSE) {
 
   # Check if arguments are numeric
+
   if (!all(sapply(list(q, lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
 
   # Check for invalid arguments
+
   if (any(q < 0) || min(lambda <= 0) || min(gamma <= 0) ||
         phi == 0) {
     stop("Invalid arguments")
   }
 
   # Compute survival function
+
   sf <- (1 - exp(-phi * exp(lambda * (1 - exp(q^gamma))))) /
     (1 - exp(-phi))
 
   # Adjust survival function if lower_tail is TRUE
+
   if (lower_tail)
     sf <- 1 - sf
 

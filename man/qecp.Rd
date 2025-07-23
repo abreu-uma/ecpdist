@@ -2,7 +2,7 @@
 % Please edit documentation in R/qecp.R
 \name{qecp}
 \alias{qecp}
-\title{Quantile function}
+\title{Quantile function of the ecp distribution}
 \usage{
 qecp(p, lambda, gamma, phi, lower_tail = TRUE, log_p = FALSE)
 }

@@ -33,17 +33,20 @@
 ecp_shape <- function(lambda, gamma, phi, measure) {
 
   # Check if arguments are numeric
+
   if (!all(sapply(list(lambda, gamma, phi), is.numeric))) {
     stop("non-numeric argument")
   }
 
   # Check for invalid arguments
+
   if (min(lambda <= 0) || min(gamma <= 0) ||
         phi == 0) {
     stop("Invalid arguments")
   }
 
   # Compute skewness or kurtosis measure
+
   q <- qecp(p = seq(1 / 8, 7 / 8, 1 / 8), lambda, gamma, phi)
   func <- switch(measure, bowley = (q[2] - 2 * q[4] + q[6]) / (q[6] - q[2]),
                  moors = (q[7] - q[5] - q[3] + q[1]) / (q[6] - q[2]),

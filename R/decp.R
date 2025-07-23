@@ -1,4 +1,4 @@
-#### Density function of the extended Chen-Poisson distribution ####
+#### Density function of the ecp distribution ####
 
 #' Density function of the ecp distribution
 #'

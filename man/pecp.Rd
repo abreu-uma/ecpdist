@@ -2,7 +2,7 @@
 % Please edit documentation in R/pecp.R
 \name{pecp}
 \alias{pecp}
-\title{Distribution function}
+\title{Distribution function of the ecp distribution}
 \usage{
 pecp(q, lambda, gamma, phi, lower_tail = TRUE, log_p = FALSE)
 }

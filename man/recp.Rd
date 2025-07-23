@@ -2,7 +2,7 @@
 % Please edit documentation in R/recp.R
 \name{recp}
 \alias{recp}
-\title{Function to generate a pseudo-random sample}
+\title{Function to generate a pseudo-random sample of the ecp distribution}
 \usage{
 recp(n, lambda, gamma, phi)
 }

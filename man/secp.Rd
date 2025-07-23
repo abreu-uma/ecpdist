@@ -2,7 +2,7 @@
 % Please edit documentation in R/secp.R
 \name{secp}
 \alias{secp}
-\title{Survival function}
+\title{Survival function of the ecp distribution}
 \usage{
 secp(q, lambda, gamma, phi, lower_tail = FALSE, cum_haz = FALSE)
 }
