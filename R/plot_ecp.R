@@ -64,18 +64,18 @@
 #'
 #' ecp_plot(data_type = "expression", from = 0, to = 6, lambda = 2, gamma = 0.3,
 #' phi = 30, func_type = "cumulative distribution",
-#' title = "ecp Cumulative Distribution Function (Expression)")
+#' title = "ecp cumulative distribution function (expression)")
 #'
 #'#  Example of plotting an unimodal hazard function using an expression
 #'
 #' ecp_plot(data_type = "expression", lambda = 2, gamma = 0.3, phi = 30,
-#' func_type = "hazard", title = "ecp Hazard Function (Expression)")
+#' func_type = "hazard", title = "ecp hazard function (expression)")
 #'
 #'#  Example of plotting an unimodal hazard function using data points
 #'
 #' x_data <- seq(0.0000001, 1, by = 0.0001)
 #' ecp_plot(data_type = "data", x = x_data, lambda = 2, gamma = 0.3, phi = 30,
-#' func_type = "hazard", title = "ecp Hazard Function (Data Points)")
+#' func_type = "hazard", title = "ecp hazard function (data points)")
 #'
 #' @export
 #'
@@ -124,9 +124,9 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
   ylab <- switch(func_type,
                  "density" = "Density",
                  "hazard" = "Hazard",
-                 "cumulative hazard" = "Cumulative Hazard",
+                 "cumulative hazard" = "Cumulative hazard",
                  "survival" = "Survival",
-                 "cumulative distribution" = "Cumulative Distribution",
+                 "cumulative distribution" = "Cumulative distribution",
                  "quantile" = "Quantile")
 
   if (data_type == "expression") {
@@ -136,9 +136,9 @@ ecp_plot <- function(data_type, from = NULL, to = NULL, xlim = NULL,
     ylab <- switch(func_type,
                    "density" = "Density",
                    "hazard" = "Hazard",
-                   "cumulative hazard" = "Cumulative Hazard",
+                   "cumulative hazard" = "Cumulative hazard",
                    "survival" = "Survival",
-                   "cumulative distribution" = "Cumulative Distribution",
+                   "cumulative distribution" = "Cumulative distribution",
                    "quantile" = "Quantile")
 
     graphics::curve(expr = func, from = from, to = to, xlim = xlim, ylim = ylim,
