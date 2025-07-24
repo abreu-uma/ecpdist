@@ -9,17 +9,23 @@ Extended Chen-Poisson Lifetime Distribution
 
 # ecpdist
 
-`ecpdist` is a package for working with the Chen and the Extended Chen-Poisson 
-Lifetime Distributions. It provides functions to compute
-- Cumulative distribution, survival, density, hazard, and cumulative hazard 
-functions 
-- Quantile function
-- Graphics for these functions 
-- Measures of skewness and kurtosis
-- *k*-th raw moments and conditional *k*-th moments 
-- Mean residual life function 
+`ecpdist` is a package for working with the Chen and the Extended
+Chen-Poisson Lifetime Distributions. It provides functions to compute:
 
-More may be added soon!
+- Cumulative distribution, survival, density, hazard, and cumulative
+  hazard functions
+
+- Quantile function
+
+- Graphics for these functions
+
+- Measures of skewness and kurtosis
+
+- *k*-th raw moments and conditional *k*-th moments
+
+- Mean residual life function
+
+More features may be added soon!
 
 ## Installation
 
