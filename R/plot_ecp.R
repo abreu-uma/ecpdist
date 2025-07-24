@@ -69,13 +69,13 @@
 #'#  Example of plotting an unimodal hazard function using an expression
 #'
 #' ecp_plot(data_type = "expression", lambda = 2, gamma = 0.3, phi = 30,
-#' func_type = "hazard", title = "ecp hazard function (expression)")
+#' func_type = "hazard", title = "ecp hazard function (expression)", to = 10)
 #'
 #'#  Example of plotting an unimodal hazard function using data points
 #'
-#' x_data <- seq(0.0000001, 1, by = 0.0001)
+#' x_data <- seq(0.0000001, 10, by = 0.01)
 #' ecp_plot(data_type = "data", x = x_data, lambda = 2, gamma = 0.3, phi = 30,
-#' func_type = "hazard", title = "ecp hazard function (data points)")
+#' func_type = "hazard", title = "ecp hazard function (data points)", to = 10)
 #'
 #' @export
 #'
