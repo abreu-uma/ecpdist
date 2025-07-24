@@ -12,11 +12,11 @@ Authors@R: c(person(given = "Ana", family = "Abreu",
 Maintainer: Ana Abreu <abreu@staff.uma.pt>
 Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
-Description: Computes the Extended Chen-Poisson (ecp) distribution, survival, 
-    density, hazard, cumulative hazard and quantile functions. It also allows 
-    to generate a pseudo-random sample from this distribution. The corresponding 
-    graphics are available. Functions to obtain measures of skewness and 
-    kurtosis, k-th raw moments, conditional k-th moments and mean 
+Description: Computes the Chen and the Extended Chen-Poisson (ecp) distribution, 
+    survival, density, hazard, cumulative hazard and quantile functions. It also 
+    allows to generate a pseudo-random sample from these distributions. The 
+    corresponding graphics are available. Functions to obtain measures of 
+    skewness and kurtosis, k-th raw moments, conditional k-th moments and mean 
     residual life function were added. For details about ecp distribution, see 
     Sousa-Ferreira, I., Abreu, A.M. & Rocha, C. (2023). 
     <doi:10.57805/revstat.v21i2.405>.
