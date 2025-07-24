@@ -42,7 +42,7 @@ devtools::install_github("abreu-uma/ecpdist")
 
 ### From CRAN (still does not have the Chen distribution)
 
-You can install the released version of `ecpdist` from
+You can install the previous released version of `ecpdist` from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
