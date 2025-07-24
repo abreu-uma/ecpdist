@@ -19,7 +19,7 @@ functions
 - *k*-th raw moments and conditional *k*-th moments 
 - Mean residual life function 
 
-More may be added soon!
+More features may be added soon!
 
 ## Installation
 
