@@ -4,6 +4,11 @@
 ---
 title: "ecpdist news"
 ---
+# ecpdist 0.3.0
+### (2025-07-24)
+
+* Add Chen functions.
+
 # ecpdist 0.2.1
 ### (2024-09-05)
 
