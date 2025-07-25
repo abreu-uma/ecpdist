@@ -1,6 +1,6 @@
 Extended Chen-Poisson Lifetime Distribution
 ================
-2025-07-24
+2025-07-25
 
 <!-- badges: start -->
 
@@ -18,6 +18,8 @@ Chen-Poisson Lifetime Distributions. It provides functions to compute:
 - Quantile function
 
 - Graphics for these functions
+
+- Random samples
 
 - Measures of skewness and kurtosis
 

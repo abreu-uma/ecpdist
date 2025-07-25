@@ -24,6 +24,8 @@ functions
 
 - Graphics for these functions 
 
+- Random samples
+
 - Measures of skewness and kurtosis
 
 - *k*-th raw moments and conditional *k*-th moments 
