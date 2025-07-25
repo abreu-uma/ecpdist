@@ -14,7 +14,8 @@ Lifetime Distributions. It provides functions to compute:
 - Cumulative distribution, survival, density, hazard, and cumulative hazard 
 functions 
 - Quantile function
-- Graphics for these functions 
+- Graphics for these functions
+- Random samples
 - Measures of skewness and kurtosis
 - *k*-th raw moments and conditional *k*-th moments 
 - Mean residual life function 
